@@ -34,6 +34,7 @@ function setup() {
 
 function draw() {
   background(101);
+  console.log(frameRate());
 
   x = x + speed;
 
@@ -52,9 +53,7 @@ function draw() {
   strokeWeight(deltaBarStroke);
   line(xDeltaEvalBar, 0, xDeltaEvalBar, height);
 
-  // Notes lines
   // Notes bars
-  // line(x1, y1, x2, y2)
   for (let i = 0; i < numNotes; i++) {
     stroke(255, 204, 0);
     strokeWeight(1);
